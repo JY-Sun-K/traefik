@@ -11,11 +11,11 @@ import (
 	"github.com/mailgun/ttlmap"
 	"github.com/opentracing/opentracing-go/ext"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/middlewares"
-	"github.com/traefik/traefik/v3/pkg/tracing"
 	"github.com/vulcand/oxy/v2/utils"
 	"golang.org/x/time/rate"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/middlewares"
+	"traefik/v3/pkg/tracing"
 )
 
 const (

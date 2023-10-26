@@ -12,10 +12,10 @@ import (
 
 	gokitmetrics "github.com/go-kit/kit/metrics"
 	"github.com/stretchr/testify/assert"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/testhelpers"
 	"google.golang.org/grpc"
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/testhelpers"
 )
 
 type StartTestServer interface {

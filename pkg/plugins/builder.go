@@ -8,9 +8,9 @@ import (
 
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/logs"
 	"github.com/traefik/yaegi/interp"
 	"github.com/traefik/yaegi/stdlib"
+	"traefik/v3/pkg/logs"
 )
 
 // Constructor creates a plugin handler.

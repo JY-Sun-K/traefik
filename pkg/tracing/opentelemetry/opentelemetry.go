@@ -8,8 +8,6 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/types"
-	"github.com/traefik/traefik/v3/pkg/version"
 	"go.opentelemetry.io/otel"
 	oteltracer "go.opentelemetry.io/otel/bridge/opentracing"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace"
@@ -22,6 +20,8 @@ import (
 	"go.opentelemetry.io/otel/trace"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/encoding/gzip"
+	"traefik/v3/pkg/types"
+	"traefik/v3/pkg/version"
 )
 
 // Config provides configuration settings for the open-telemetry tracer.

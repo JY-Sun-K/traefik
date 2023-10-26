@@ -7,8 +7,8 @@ import (
 	"net/http"
 
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
 	"github.com/vulcand/oxy/v2/utils"
+	"traefik/v3/pkg/config/dynamic"
 )
 
 // GetSourceExtractor returns the SourceExtractor function corresponding to the given sourceMatcher.

@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/config/dynamic"
 )
 
 func TestGetTCPRoutersByEntryPoints(t *testing.T) {

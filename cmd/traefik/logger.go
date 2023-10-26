@@ -1,4 +1,4 @@
-package main
+package traefik
 
 import (
 	"io"
@@ -11,8 +11,8 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/sirupsen/logrus"
-	"github.com/traefik/traefik/v3/pkg/config/static"
-	"github.com/traefik/traefik/v3/pkg/logs"
+	"traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/logs"
 )
 
 func init() {

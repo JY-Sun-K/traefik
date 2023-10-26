@@ -30,14 +30,14 @@ import (
 	"context"
 	time "time"
 
-	versioned "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned"
-	internalinterfaces "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/listers/traefikio/v1alpha1"
-	traefikiov1alpha1 "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
+	versioned "traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned"
+	internalinterfaces "traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions/internalinterfaces"
+	v1alpha1 "traefik/v3/pkg/provider/kubernetes/crd/generated/listers/traefikio/v1alpha1"
+	traefikiov1alpha1 "traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
 )
 
 // TLSOptionInformer provides access to a shared informer and lister for

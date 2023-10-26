@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/logs"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/logs"
 )
 
 // GetTCPRoutersByEntryPoints returns all the tcp routers by entry points name and routers name.

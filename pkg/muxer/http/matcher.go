@@ -8,9 +8,9 @@ import (
 	"unicode/utf8"
 
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/ip"
-	"github.com/traefik/traefik/v3/pkg/middlewares/requestdecorator"
 	"golang.org/x/exp/slices"
+	"traefik/v3/pkg/ip"
+	"traefik/v3/pkg/middlewares/requestdecorator"
 )
 
 var httpFuncs = map[string]func(*matchersTree, ...string) error{

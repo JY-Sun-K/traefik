@@ -4,8 +4,8 @@ import (
 	"time"
 
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v3/pkg/ip"
-	"github.com/traefik/traefik/v3/pkg/types"
+	"traefik/v3/pkg/ip"
+	"traefik/v3/pkg/types"
 )
 
 // +k8s:deepcopy-gen=true

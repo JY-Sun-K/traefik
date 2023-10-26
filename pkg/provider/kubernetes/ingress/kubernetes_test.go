@@ -11,13 +11,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/provider"
-	"github.com/traefik/traefik/v3/pkg/tls"
-	"github.com/traefik/traefik/v3/pkg/types"
 	corev1 "k8s.io/api/core/v1"
 	netv1 "k8s.io/api/networking/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/provider"
+	"traefik/v3/pkg/tls"
+	"traefik/v3/pkg/types"
 )
 
 var _ provider.Provider = (*Provider)(nil)

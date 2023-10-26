@@ -14,8 +14,8 @@ import (
 	"github.com/cenkalti/backoff/v4"
 	"github.com/go-acme/lego/v4/challenge/http01"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/safe"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/safe"
 )
 
 // ChallengeHTTP HTTP challenge provider implements challenge.Provider.

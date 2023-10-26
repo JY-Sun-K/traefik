@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/middlewares/capture"
 	"github.com/vulcand/oxy/v2/utils"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/middlewares/capture"
 )
 
 // FieldApply function hook to add data in accesslog.

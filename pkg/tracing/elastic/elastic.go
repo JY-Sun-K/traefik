@@ -6,11 +6,11 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/version"
 	"go.elastic.co/apm"
 	"go.elastic.co/apm/module/apmot"
 	"go.elastic.co/apm/transport"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/version"
 )
 
 // Name sets the name of this tracer.

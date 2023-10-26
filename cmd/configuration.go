@@ -1,11 +1,11 @@
 package cmd
 
 import (
-	"github.com/traefik/traefik/v3/pkg/provider/http"
 	"time"
+	"traefik/v3/pkg/provider/http"
 
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/config/static"
 )
 
 // TraefikCmdConfiguration wraps the static configuration and extra parameters.

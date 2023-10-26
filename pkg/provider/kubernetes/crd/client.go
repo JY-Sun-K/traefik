@@ -9,11 +9,6 @@ import (
 	"time"
 
 	"github.com/rs/zerolog/log"
-	traefikclientset "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned"
-	traefikinformers "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions"
-	traefikv1alpha1 "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
-	"github.com/traefik/traefik/v3/pkg/provider/kubernetes/k8s"
-	"github.com/traefik/traefik/v3/pkg/version"
 	corev1 "k8s.io/api/core/v1"
 	kerror "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -22,6 +17,11 @@ import (
 	kclientset "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
+	traefikclientset "traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned"
+	traefikinformers "traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions"
+	traefikv1alpha1 "traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
+	"traefik/v3/pkg/provider/kubernetes/k8s"
+	"traefik/v3/pkg/version"
 )
 
 const resyncPeriod = 10 * time.Minute

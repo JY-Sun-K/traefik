@@ -9,12 +9,12 @@ import (
 	"time"
 
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/config/static"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/provider"
-	"github.com/traefik/traefik/v3/pkg/safe"
-	"github.com/traefik/traefik/v3/pkg/tls"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/provider"
+	"traefik/v3/pkg/safe"
+	"traefik/v3/pkg/tls"
 )
 
 const defaultInternalEntryPointName = "traefik"

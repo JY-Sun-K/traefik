@@ -12,9 +12,9 @@ import (
 
 	"github.com/go-check/check"
 	gorillawebsocket "github.com/gorilla/websocket"
-	"github.com/traefik/traefik/v3/integration/try"
 	checker "github.com/vdemeester/shakers"
 	"golang.org/x/net/websocket"
+	"traefik/v3/integration/try"
 )
 
 // WebsocketSuite tests suite.

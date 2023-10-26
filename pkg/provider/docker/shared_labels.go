@@ -3,7 +3,7 @@ package docker
 import (
 	"fmt"
 
-	"github.com/traefik/traefik/v3/pkg/config/label"
+	"traefik/v3/pkg/config/label"
 )
 
 const (

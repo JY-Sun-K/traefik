@@ -11,12 +11,12 @@ import (
 	"github.com/containous/alice"
 	gokitmetrics "github.com/go-kit/kit/metrics"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/metrics"
-	"github.com/traefik/traefik/v3/pkg/middlewares"
-	"github.com/traefik/traefik/v3/pkg/middlewares/capture"
-	"github.com/traefik/traefik/v3/pkg/middlewares/retry"
-	traefiktls "github.com/traefik/traefik/v3/pkg/tls"
 	"google.golang.org/grpc/codes"
+	"traefik/v3/pkg/metrics"
+	"traefik/v3/pkg/middlewares"
+	"traefik/v3/pkg/middlewares/capture"
+	"traefik/v3/pkg/middlewares/retry"
+	traefiktls "traefik/v3/pkg/tls"
 )
 
 const (

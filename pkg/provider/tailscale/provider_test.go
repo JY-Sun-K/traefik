@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	traefiktls "github.com/traefik/traefik/v3/pkg/tls"
-	"github.com/traefik/traefik/v3/pkg/types"
+	"traefik/v3/pkg/config/dynamic"
+	traefiktls "traefik/v3/pkg/tls"
+	"traefik/v3/pkg/types"
 )
 
 func TestProvider_findDomains(t *testing.T) {

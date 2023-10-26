@@ -5,12 +5,12 @@ import (
 
 	"github.com/containous/alice"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/metrics"
-	"github.com/traefik/traefik/v3/pkg/middlewares/accesslog"
-	"github.com/traefik/traefik/v3/pkg/middlewares/capture"
-	metricsmiddleware "github.com/traefik/traefik/v3/pkg/middlewares/metrics"
-	mTracing "github.com/traefik/traefik/v3/pkg/middlewares/tracing"
-	"github.com/traefik/traefik/v3/pkg/tracing"
+	"traefik/v3/pkg/metrics"
+	"traefik/v3/pkg/middlewares/accesslog"
+	"traefik/v3/pkg/middlewares/capture"
+	metricsmiddleware "traefik/v3/pkg/middlewares/metrics"
+	mTracing "traefik/v3/pkg/middlewares/tracing"
+	"traefik/v3/pkg/tracing"
 )
 
 // ChainBuilder Creates a middleware chain by entry point. It is used for middlewares that are created almost systematically and that need to be created before all others.

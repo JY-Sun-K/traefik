@@ -10,11 +10,11 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/provider"
-	"github.com/traefik/traefik/v3/pkg/safe"
 	"github.com/traefik/yaegi/interp"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/provider"
+	"traefik/v3/pkg/safe"
 )
 
 // PP the interface of a plugin's provider.
@@ -45,7 +45,7 @@ func (p _PP) Stop() error {
 
 func ppSymbols() map[string]map[string]reflect.Value {
 	return map[string]map[string]reflect.Value{
-		"github.com/traefik/traefik/v3/pkg/plugins/plugins": {
+		"traefik/v3/pkg/plugins/plugins": {
 			"PP":  reflect.ValueOf((*PP)(nil)),
 			"_PP": reflect.ValueOf((*_PP)(nil)),
 		},
@@ -115,7 +115,7 @@ import (
 	"context"
 
 	` + basePkg + ` "` + builder.Import + `"
-	"github.com/traefik/traefik/v3/pkg/plugins"
+	"traefik/v3/pkg/plugins"
 )
 
 func NewWrapper(ctx context.Context, config *` + basePkg + `.Config, name string) (plugins.PP, error) {

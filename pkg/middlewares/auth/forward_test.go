@@ -12,11 +12,11 @@ import (
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	tracingMiddleware "github.com/traefik/traefik/v3/pkg/middlewares/tracing"
-	"github.com/traefik/traefik/v3/pkg/testhelpers"
-	"github.com/traefik/traefik/v3/pkg/tracing"
 	"github.com/vulcand/oxy/v2/forward"
+	"traefik/v3/pkg/config/dynamic"
+	tracingMiddleware "traefik/v3/pkg/middlewares/tracing"
+	"traefik/v3/pkg/testhelpers"
+	"traefik/v3/pkg/tracing"
 )
 
 func TestForwardAuthFail(t *testing.T) {

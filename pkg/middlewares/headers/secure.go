@@ -3,8 +3,8 @@ package headers
 import (
 	"net/http"
 
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
 	"github.com/unrolled/secure"
+	"traefik/v3/pkg/config/dynamic"
 )
 
 type secureHeader struct {

@@ -1,10 +1,10 @@
-package main
+package traefik
 
 import (
 	"fmt"
 
-	"github.com/traefik/traefik/v3/pkg/config/static"
-	"github.com/traefik/traefik/v3/pkg/plugins"
+	"traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/plugins"
 )
 
 const outputDir = "./plugins-storage/"

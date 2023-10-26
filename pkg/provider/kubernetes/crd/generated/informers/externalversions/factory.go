@@ -31,13 +31,13 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned"
-	internalinterfaces "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions/internalinterfaces"
-	traefikio "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions/traefikio"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
+	versioned "traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned"
+	internalinterfaces "traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions/internalinterfaces"
+	traefikio "traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions/traefikio"
 )
 
 // SharedInformerOption defines the functional option type for SharedInformerFactory.

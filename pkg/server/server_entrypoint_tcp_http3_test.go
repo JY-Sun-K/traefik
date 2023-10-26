@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v3/pkg/config/static"
-	tcprouter "github.com/traefik/traefik/v3/pkg/server/router/tcp"
-	traefiktls "github.com/traefik/traefik/v3/pkg/tls"
+	"traefik/v3/pkg/config/static"
+	tcprouter "traefik/v3/pkg/server/router/tcp"
+	traefiktls "traefik/v3/pkg/tls"
 )
 
 // LocalhostCert is a PEM-encoded TLS cert with SAN IPs

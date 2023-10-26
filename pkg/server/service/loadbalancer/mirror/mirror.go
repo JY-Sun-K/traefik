@@ -12,10 +12,10 @@ import (
 	"sync"
 
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/healthcheck"
-	"github.com/traefik/traefik/v3/pkg/middlewares/accesslog"
-	"github.com/traefik/traefik/v3/pkg/safe"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/healthcheck"
+	"traefik/v3/pkg/middlewares/accesslog"
+	"traefik/v3/pkg/safe"
 )
 
 // Mirroring is an http.Handler that can mirror requests.

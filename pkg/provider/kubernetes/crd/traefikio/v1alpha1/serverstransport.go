@@ -1,9 +1,9 @@
 package v1alpha1
 
 import (
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
+	"traefik/v3/pkg/config/dynamic"
 )
 
 // +genclient

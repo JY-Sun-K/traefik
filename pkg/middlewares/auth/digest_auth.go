@@ -9,10 +9,10 @@ import (
 
 	goauth "github.com/abbot/go-http-auth"
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/middlewares"
-	"github.com/traefik/traefik/v3/pkg/middlewares/accesslog"
-	"github.com/traefik/traefik/v3/pkg/tracing"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/middlewares"
+	"traefik/v3/pkg/middlewares/accesslog"
+	"traefik/v3/pkg/tracing"
 )
 
 const (

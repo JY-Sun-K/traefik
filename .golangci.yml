@@ -88,17 +88,17 @@ linters-settings:
 
       # Traefik Kubernetes rewrites:
       - alias: containousv1alpha1
-        pkg: "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/traefikcontainous/v1alpha1"
+        pkg: "traefik/v3/pkg/provider/kubernetes/crd/traefikcontainous/v1alpha1"
       - alias: traefikv1alpha1
-        pkg: "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
+        pkg: "traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
       - alias: traefikclientset
-        pkg: "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned"
+        pkg: "traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned"
       - alias: traefikinformers
-        pkg: "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions"
+        pkg: "traefik/v3/pkg/provider/kubernetes/crd/generated/informers/externalversions"
       - alias: traefikscheme
-        pkg: "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned/scheme"
+        pkg: "traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned/scheme"
       - alias: traefikcrdfake
-        pkg: "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned/fake"
+        pkg: "traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned/fake"
   tagalign:
     align: false
     sort: true

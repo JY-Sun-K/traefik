@@ -11,11 +11,11 @@ import (
 	"strings"
 
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/middlewares"
-	"github.com/traefik/traefik/v3/pkg/tracing"
-	"github.com/traefik/traefik/v3/pkg/types"
 	"github.com/vulcand/oxy/v2/utils"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/middlewares"
+	"traefik/v3/pkg/tracing"
+	"traefik/v3/pkg/types"
 )
 
 // Compile time validation that the response recorder implements http interfaces correctly.

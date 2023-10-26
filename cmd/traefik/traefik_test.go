@@ -1,15 +1,16 @@
-package main
+package traefik
 
 import (
 	"crypto/x509"
 	"encoding/pem"
 	"strings"
 	"testing"
+	"traefik/v3/cmd"
 
 	"github.com/go-kit/kit/metrics"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/config/static"
 )
 
 // FooCert is a PEM-encoded TLS cert.
@@ -190,4 +191,46 @@ func TestGetDefaultsEntrypoints(t *testing.T) {
 			assert.ElementsMatch(t, test.expected, actual)
 		})
 	}
+}
+
+func TestRun(t *testing.T) {
+	// traefik config inits
+	tConfig := cmd.NewTraefikConfiguration()
+	serv := &TraefixServ{}
+	err := serv.Start(&tConfig.Configuration)
+	if err != nil {
+		return
+	}
+	//	loaders := []cli.ResourceLoader{&tcli.FileLoader{}, &tcli.FlagLoader{}, &tcli.EnvLoader{}}
+	//
+	//	cmdTraefik := &cli.Command{
+	//		Name: "traefik",
+	//		Description: `Traefik is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease.
+	//Complete documentation is available at https://traefik.io`,
+	//		Configuration: tConfig,
+	//		Resources:     loaders,
+	//		Run: func(_ []string) error {
+	//			return runCmd(&tConfig.Configuration)
+	//		},
+	//	}
+	//
+	//	err := cmdTraefik.AddCommand(healthcheck.NewCmd(&tConfig.Configuration, loaders))
+	//	if err != nil {
+	//		stdlog.Println(err)
+	//		os.Exit(1)
+	//	}
+	//
+	//	err = cmdTraefik.AddCommand(cmdVersion.NewCmd())
+	//	if err != nil {
+	//		stdlog.Println(err)
+	//		os.Exit(1)
+	//	}
+	//
+	//	err = cli.Execute(cmdTraefik)
+	//	if err != nil {
+	//		log.Error().Err(err).Msg("Command error")
+	//		logrus.Exit(1)
+	//	}
+	//
+	//	logrus.Exit(0)
 }

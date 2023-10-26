@@ -13,9 +13,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/config/runtime"
-	"github.com/traefik/traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/config/runtime"
+	"traefik/v3/pkg/config/static"
 )
 
 func Bool(v bool) *bool { return &v }

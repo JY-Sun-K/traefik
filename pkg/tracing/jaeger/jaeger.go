@@ -6,11 +6,11 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/logs"
 	jaegercli "github.com/uber/jaeger-client-go"
 	jaegercfg "github.com/uber/jaeger-client-go/config"
 	"github.com/uber/jaeger-client-go/zipkin"
 	jaegermet "github.com/uber/jaeger-lib/metrics"
+	"traefik/v3/pkg/logs"
 )
 
 // Name sets the name of this tracer.

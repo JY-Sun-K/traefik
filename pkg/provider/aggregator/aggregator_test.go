@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/provider"
-	"github.com/traefik/traefik/v3/pkg/safe"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/provider"
+	"traefik/v3/pkg/safe"
 )
 
 func TestProviderAggregator_Provide(t *testing.T) {

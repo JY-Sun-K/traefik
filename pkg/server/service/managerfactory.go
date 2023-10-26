@@ -4,12 +4,12 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/traefik/traefik/v3/pkg/api"
-	"github.com/traefik/traefik/v3/pkg/api/dashboard"
-	"github.com/traefik/traefik/v3/pkg/config/runtime"
-	"github.com/traefik/traefik/v3/pkg/config/static"
-	"github.com/traefik/traefik/v3/pkg/metrics"
-	"github.com/traefik/traefik/v3/pkg/safe"
+	"traefik/v3/pkg/api"
+	"traefik/v3/pkg/api/dashboard"
+	"traefik/v3/pkg/config/runtime"
+	"traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/metrics"
+	"traefik/v3/pkg/safe"
 )
 
 // ManagerFactory a factory of service manager.

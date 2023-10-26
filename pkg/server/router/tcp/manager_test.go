@@ -9,12 +9,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/config/runtime"
-	tcpmiddleware "github.com/traefik/traefik/v3/pkg/server/middleware/tcp"
-	"github.com/traefik/traefik/v3/pkg/server/service/tcp"
-	tcp2 "github.com/traefik/traefik/v3/pkg/tcp"
-	traefiktls "github.com/traefik/traefik/v3/pkg/tls"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/config/runtime"
+	tcpmiddleware "traefik/v3/pkg/server/middleware/tcp"
+	"traefik/v3/pkg/server/service/tcp"
+	tcp2 "traefik/v3/pkg/tcp"
+	traefiktls "traefik/v3/pkg/tls"
 )
 
 func TestRuntimeConfiguration(t *testing.T) {

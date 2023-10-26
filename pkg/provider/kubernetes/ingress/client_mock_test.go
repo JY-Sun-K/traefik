@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/traefik/traefik/v3/pkg/provider/kubernetes/k8s"
 	corev1 "k8s.io/api/core/v1"
 	netv1 "k8s.io/api/networking/v1"
+	"traefik/v3/pkg/provider/kubernetes/k8s"
 )
 
 var _ Client = (*clientMock)(nil)

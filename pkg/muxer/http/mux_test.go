@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v3/pkg/middlewares/requestdecorator"
-	"github.com/traefik/traefik/v3/pkg/testhelpers"
+	"traefik/v3/pkg/middlewares/requestdecorator"
+	"traefik/v3/pkg/testhelpers"
 )
 
 func TestMuxer(t *testing.T) {

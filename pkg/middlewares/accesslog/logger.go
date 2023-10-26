@@ -19,10 +19,10 @@ import (
 	"github.com/rs/zerolog/log"
 	"github.com/sirupsen/logrus"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/middlewares/capture"
-	traefiktls "github.com/traefik/traefik/v3/pkg/tls"
-	"github.com/traefik/traefik/v3/pkg/types"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/middlewares/capture"
+	traefiktls "traefik/v3/pkg/tls"
+	"traefik/v3/pkg/types"
 )
 
 type key string

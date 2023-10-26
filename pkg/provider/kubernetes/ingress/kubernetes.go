@@ -18,16 +18,16 @@ import (
 	"github.com/mitchellh/hashstructure"
 	"github.com/rs/zerolog/log"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/job"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/provider"
-	"github.com/traefik/traefik/v3/pkg/provider/kubernetes/k8s"
-	"github.com/traefik/traefik/v3/pkg/safe"
-	"github.com/traefik/traefik/v3/pkg/tls"
 	corev1 "k8s.io/api/core/v1"
 	netv1 "k8s.io/api/networking/v1"
 	"k8s.io/apimachinery/pkg/labels"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/job"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/provider"
+	"traefik/v3/pkg/provider/kubernetes/k8s"
+	"traefik/v3/pkg/safe"
+	"traefik/v3/pkg/tls"
 )
 
 const (

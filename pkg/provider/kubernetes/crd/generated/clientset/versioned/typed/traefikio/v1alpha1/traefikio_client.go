@@ -27,9 +27,9 @@ THE SOFTWARE.
 package v1alpha1
 
 import (
-	"github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned/scheme"
-	v1alpha1 "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
 	rest "k8s.io/client-go/rest"
+	"traefik/v3/pkg/provider/kubernetes/crd/generated/clientset/versioned/scheme"
+	v1alpha1 "traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
 )
 
 type TraefikV1alpha1Interface interface {

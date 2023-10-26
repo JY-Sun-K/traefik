@@ -15,9 +15,9 @@ import (
 	"github.com/kvtools/valkeyrie"
 	"github.com/kvtools/valkeyrie/store"
 	"github.com/pmezard/go-difflib/difflib"
-	"github.com/traefik/traefik/v3/integration/try"
-	"github.com/traefik/traefik/v3/pkg/api"
 	checker "github.com/vdemeester/shakers"
+	"traefik/v3/integration/try"
+	"traefik/v3/pkg/api"
 )
 
 // Redis test suites.

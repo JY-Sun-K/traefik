@@ -6,9 +6,9 @@ import (
 	"net/http"
 
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/plugins"
-	"github.com/traefik/traefik/v3/pkg/tracing"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/plugins"
+	"traefik/v3/pkg/tracing"
 )
 
 // PluginsBuilder the plugin's builder interface.

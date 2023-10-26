@@ -7,10 +7,10 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/provider"
-	"github.com/traefik/traefik/v3/pkg/safe"
 	"github.com/unrolled/render"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/provider"
+	"traefik/v3/pkg/safe"
 )
 
 var _ provider.Provider = (*Provider)(nil)

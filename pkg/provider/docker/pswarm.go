@@ -15,11 +15,11 @@ import (
 	"github.com/docker/docker/client"
 	"github.com/rs/zerolog/log"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/job"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/provider"
-	"github.com/traefik/traefik/v3/pkg/safe"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/job"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/provider"
+	"traefik/v3/pkg/safe"
 )
 
 // SwarmAPIVersion is a constant holding the version of the Provider API traefik will use.

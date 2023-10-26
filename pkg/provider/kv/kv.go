@@ -11,11 +11,11 @@ import (
 	"github.com/kvtools/valkeyrie"
 	"github.com/kvtools/valkeyrie/store"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/config/kv"
-	"github.com/traefik/traefik/v3/pkg/job"
-	"github.com/traefik/traefik/v3/pkg/logs"
-	"github.com/traefik/traefik/v3/pkg/safe"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/config/kv"
+	"traefik/v3/pkg/job"
+	"traefik/v3/pkg/logs"
+	"traefik/v3/pkg/safe"
 )
 
 // Provider holds configurations of the provider.

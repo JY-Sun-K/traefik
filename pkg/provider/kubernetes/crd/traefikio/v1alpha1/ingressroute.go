@@ -1,10 +1,10 @@
 package v1alpha1
 
 import (
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/types"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/types"
 )
 
 // IngressRouteSpec defines the desired state of IngressRoute.

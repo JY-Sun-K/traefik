@@ -9,8 +9,8 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/runtime"
-	"github.com/traefik/traefik/v3/pkg/tls"
+	"traefik/v3/pkg/config/runtime"
+	"traefik/v3/pkg/tls"
 )
 
 type routerRepresentation struct {

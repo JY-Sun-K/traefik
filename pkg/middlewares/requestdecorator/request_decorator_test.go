@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/traefik/traefik/v3/pkg/testhelpers"
-	"github.com/traefik/traefik/v3/pkg/types"
+	"traefik/v3/pkg/testhelpers"
+	"traefik/v3/pkg/types"
 )
 
 func TestRequestHost(t *testing.T) {

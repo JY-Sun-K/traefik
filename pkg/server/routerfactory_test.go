@@ -6,15 +6,15 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/config/runtime"
-	"github.com/traefik/traefik/v3/pkg/config/static"
-	"github.com/traefik/traefik/v3/pkg/metrics"
-	"github.com/traefik/traefik/v3/pkg/server/middleware"
-	"github.com/traefik/traefik/v3/pkg/server/service"
-	"github.com/traefik/traefik/v3/pkg/tcp"
-	th "github.com/traefik/traefik/v3/pkg/testhelpers"
-	"github.com/traefik/traefik/v3/pkg/tls"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/config/runtime"
+	"traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/metrics"
+	"traefik/v3/pkg/server/middleware"
+	"traefik/v3/pkg/server/service"
+	"traefik/v3/pkg/tcp"
+	th "traefik/v3/pkg/testhelpers"
+	"traefik/v3/pkg/tls"
 )
 
 func TestReuseService(t *testing.T) {

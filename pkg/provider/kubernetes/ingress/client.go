@@ -11,8 +11,6 @@ import (
 
 	"github.com/hashicorp/go-version"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/provider/kubernetes/k8s"
-	traefikversion "github.com/traefik/traefik/v3/pkg/version"
 	corev1 "k8s.io/api/core/v1"
 	netv1 "k8s.io/api/networking/v1"
 	kerror "k8s.io/apimachinery/pkg/api/errors"
@@ -22,6 +20,8 @@ import (
 	kclientset "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
+	"traefik/v3/pkg/provider/kubernetes/k8s"
+	traefikversion "traefik/v3/pkg/version"
 )
 
 const (

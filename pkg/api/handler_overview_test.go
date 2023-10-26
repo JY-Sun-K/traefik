@@ -10,16 +10,16 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/config/runtime"
-	"github.com/traefik/traefik/v3/pkg/config/static"
-	"github.com/traefik/traefik/v3/pkg/provider/docker"
-	"github.com/traefik/traefik/v3/pkg/provider/file"
-	"github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd"
-	"github.com/traefik/traefik/v3/pkg/provider/kubernetes/ingress"
-	"github.com/traefik/traefik/v3/pkg/provider/rest"
-	"github.com/traefik/traefik/v3/pkg/tracing/jaeger"
-	"github.com/traefik/traefik/v3/pkg/types"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/config/runtime"
+	"traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/provider/docker"
+	"traefik/v3/pkg/provider/file"
+	"traefik/v3/pkg/provider/kubernetes/crd"
+	"traefik/v3/pkg/provider/kubernetes/ingress"
+	"traefik/v3/pkg/provider/rest"
+	"traefik/v3/pkg/tracing/jaeger"
+	"traefik/v3/pkg/types"
 )
 
 func TestHandler_Overview(t *testing.T) {

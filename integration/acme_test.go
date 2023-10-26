@@ -12,12 +12,12 @@ import (
 
 	"github.com/go-check/check"
 	"github.com/miekg/dns"
-	"github.com/traefik/traefik/v3/integration/try"
-	"github.com/traefik/traefik/v3/pkg/config/static"
-	"github.com/traefik/traefik/v3/pkg/provider/acme"
-	"github.com/traefik/traefik/v3/pkg/testhelpers"
-	"github.com/traefik/traefik/v3/pkg/types"
 	checker "github.com/vdemeester/shakers"
+	"traefik/v3/integration/try"
+	"traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/provider/acme"
+	"traefik/v3/pkg/testhelpers"
+	"traefik/v3/pkg/types"
 )
 
 // ACME test suites.

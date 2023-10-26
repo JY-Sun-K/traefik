@@ -3,7 +3,7 @@ package middlewares
 import (
 	"net/http"
 
-	"github.com/traefik/traefik/v3/pkg/safe"
+	"traefik/v3/pkg/safe"
 )
 
 // HTTPHandlerSwitcher allows hot switching of http.ServeMux.

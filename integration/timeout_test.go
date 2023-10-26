@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/go-check/check"
-	"github.com/traefik/traefik/v3/integration/try"
 	checker "github.com/vdemeester/shakers"
+	"traefik/v3/integration/try"
 )
 
 type TimeoutSuite struct{ BaseSuite }

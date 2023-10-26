@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
 	"golang.org/x/net/http/httpguts"
 	"golang.org/x/net/http2"
+	"traefik/v3/pkg/config/dynamic"
 )
 
 func newSmartRoundTripper(transport *http.Transport, forwardingTimeouts *dynamic.ForwardingTimeouts) (http.RoundTripper, error) {

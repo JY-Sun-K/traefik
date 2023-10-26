@@ -6,8 +6,8 @@ import (
 	"reflect"
 
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/config/runtime"
-	"github.com/traefik/traefik/v3/pkg/config/static"
+	"traefik/v3/pkg/config/runtime"
+	"traefik/v3/pkg/config/static"
 )
 
 type schemeOverview struct {

@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/traefik/traefik/v3/pkg/middlewares"
+	"traefik/v3/pkg/middlewares"
 )
 
 const (

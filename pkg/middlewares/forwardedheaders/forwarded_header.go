@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/traefik/traefik/v3/pkg/ip"
+	"traefik/v3/pkg/ip"
 )
 
 const (

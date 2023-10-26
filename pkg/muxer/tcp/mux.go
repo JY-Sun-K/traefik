@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/rules"
-	"github.com/traefik/traefik/v3/pkg/tcp"
-	"github.com/traefik/traefik/v3/pkg/types"
 	"github.com/vulcand/predicate"
+	"traefik/v3/pkg/rules"
+	"traefik/v3/pkg/tcp"
+	"traefik/v3/pkg/types"
 )
 
 // ConnData contains TCP connection metadata.

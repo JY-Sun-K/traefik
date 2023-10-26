@@ -5,10 +5,10 @@ import (
 	"os"
 	"path/filepath"
 
-	traefikv1alpha1 "github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
-	"github.com/traefik/traefik/v3/pkg/provider/kubernetes/k8s"
 	corev1 "k8s.io/api/core/v1"
 	kscheme "k8s.io/client-go/kubernetes/scheme"
+	traefikv1alpha1 "traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
+	"traefik/v3/pkg/provider/kubernetes/k8s"
 )
 
 var _ Client = (*clientMock)(nil)

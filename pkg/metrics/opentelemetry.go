@@ -10,8 +10,6 @@ import (
 
 	"github.com/go-kit/kit/metrics"
 	"github.com/rs/zerolog/log"
-	"github.com/traefik/traefik/v3/pkg/types"
-	"github.com/traefik/traefik/v3/pkg/version"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc"
 	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp"
@@ -24,6 +22,8 @@ import (
 	semconv "go.opentelemetry.io/otel/semconv/v1.12.0"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/encoding/gzip"
+	"traefik/v3/pkg/types"
+	"traefik/v3/pkg/version"
 )
 
 var (

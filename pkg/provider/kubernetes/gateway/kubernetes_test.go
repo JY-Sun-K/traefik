@@ -8,12 +8,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	ptypes "github.com/traefik/paerser/types"
-	"github.com/traefik/traefik/v3/pkg/config/dynamic"
-	"github.com/traefik/traefik/v3/pkg/provider"
-	"github.com/traefik/traefik/v3/pkg/tls"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/utils/pointer"
 	gatev1alpha2 "sigs.k8s.io/gateway-api/apis/v1alpha2"
+	"traefik/v3/pkg/config/dynamic"
+	"traefik/v3/pkg/provider"
+	"traefik/v3/pkg/tls"
 )
 
 var _ provider.Provider = (*Provider)(nil)

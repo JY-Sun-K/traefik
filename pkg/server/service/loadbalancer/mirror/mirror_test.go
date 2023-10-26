@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/traefik/traefik/v3/pkg/safe"
+	"traefik/v3/pkg/safe"
 )
 
 const defaultMaxBodySize int64 = -1
