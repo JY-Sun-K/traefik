@@ -3,8 +3,7 @@
 *.iml
 .vscode/
 .DS_Store
-/dist
-/webui/.tmp/
+.tmp/
 /site/
 /docs/site/
 /autogen/
