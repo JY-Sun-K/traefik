@@ -80,16 +80,23 @@ func main() {
 }
 
 type TraefixServ struct {
-	cancel context.CancelFunc
+	//cancel context.CancelFunc
+	server *server.Server
 }
 
 func (t *TraefixServ) Stop() {
-	if t.cancel != nil {
-		t.cancel()
-	}
+
+	//if t.cancel != nil {
+	//	t.cancel()
+	//}
+	t.server.Stop()
 }
 
-func (t *TraefixServ) Start(staticConfiguration *static.Configuration) error {
+func (t *TraefixServ) Close() {
+	t.server.Close()
+}
+
+func (t *TraefixServ) Start(ctx context.Context, staticConfiguration *static.Configuration) error {
 	setupLogger(staticConfiguration)
 
 	http.DefaultTransport.(*http.Transport).Proxy = http.ProxyFromEnvironment
@@ -102,14 +109,15 @@ func (t *TraefixServ) Start(staticConfiguration *static.Configuration) error {
 	if err != nil {
 		return err
 	}
-	ctx, cancel := context.WithCancel(context.Background())
-	t.cancel = cancel
+	//ctx, cancel := context.WithCancel(context.Background())
+	//t.cancel = cancel
 	if staticConfiguration.Ping != nil {
 		staticConfiguration.Ping.WithContext(ctx)
 	}
 
 	svr.Start(ctx)
 	defer svr.Close()
+	t.server = svr
 	svr.Wait()
 	return nil
 }
